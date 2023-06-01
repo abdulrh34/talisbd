@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy Birthday Tala!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #000;
+    }
+
+    #container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    #background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: url('space_background.gif');
+      background-repeat: repeat;
+      animation: backgroundScroll 80s linear infinite;
+    }
+
+    @keyframes backgroundScroll {
+      from { background-position: 0 0; }
+      to { background-position: -10000px 0; }
+    }
+
+    #content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    
+
+    h1 {
+        font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+            padding-top: 60px;
+
+    }
+
+    h2 {
+        font-family: "Sakkal Majalla";
+            color: white;
+            text-align: center;
+            padding-top: 70px;
+
+    }
+
+    h3 {
+        font-family: "Sakkal Majalla";
+        margin-top: 170px;
+            color: white;
+            text-align: center;
+            padding-top: 40px;
+
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #8b0000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #ff0000;
+    }
+
+    .button span {
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+    }
+
+    
+
+    
+
+    
+
+   
+
+    
+
+    .hearts span {
+      display: inline-block;
+      font-size: 24px;
+      color: #a30404;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div id="container">
+    <div id="background"></div>
+    <div id="content">
+      <h1>Hello Tala , It's 12 o'clock <br>that means that you'ur officially 18<br>congratulations!!</h1>
+      <button class="button" onclick="showSecondPage()">Press here to continue</button>
+      <div class="hearts">
+        <span> </span><span> </span><span> </span><span> </span><span> </span><span> </span>
+      </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showSecondPage() {
+      document.getElementById('content').innerHTML = `
+        <h2>Happy Birthday يا اقوى جداوي!!<br>  كل عام وانتي بخير واتمنى لك اعواما مديدة<br> من العطاء والسخاء والرخاء<br>ويارب تجيبين اعلى الدرجات بالتحصيلي<br> وتدخلين التخصص الي تبينه <br>وتاخذين الماستر فيه</h2>
+        <button class="button" onclick="showThirdPage()">Press here to continue</button>
+        <div class="hearts">
+        <span> </span><span> </span><span> </span><span> </span><span> </span><span> </span>
+      </div>
+        
+        </div>
+      `;
+    }
+
+    function showThirdPage() {
+        document.getElementById('content').innerHTML = `
+        
+        <h2>Do you know what Al-mutanabi said about you ? <br>He said :<br><br>
+لا السيفُ يفعلُ بي ما أنتِ فاعلةٌ &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;ولا لقاءُ عدوَّي مثلَ لُقياكِ <br>
+.لو باتَ سهمٌ من الأعداءِ في كَبدي&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;ما نالَ مِنَّيَ ما نالتْهُ عيناكِ</h2>
+        <button class="button" onclick="showFourthPage()">Press here to continue</button>
+        
+        <div class="hearts">
+        <span> </span><span> </span><span> </span><span> </span><span> </span><span> </span>
+      </div>
+      `;
+      
+    }
+
+    function showFourthPage() {
+        document.getElementById('content').innerHTML = `
+        <h1><br><br><br><br>This is your birthday song</h1>
+        
+        <p><a href="https://play.anghami.com/song/83451199?adj_t=dgl0aa8_64v1dnl&adj_campaign=web&adj_adgroup=song&adj_creative=81801891" class="heart-link">&#x2665; Listen to the song &#x2665;</a></p>
+
+
+        <h3><br><br>مع كامل الحب <br> مهندس الامن السيكساني وخبير الزخرفة <br> عبالرحمن محمد</h3>
+       
+       
+        
+      `;
+    }
+    
+  </script>
+</body>
+</html>
